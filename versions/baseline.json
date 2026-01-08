@@ -3,6 +3,10 @@
     "certify": {
       "baseline": "2026-01-07",
       "port-version": 0
+    },
+    "ekizu": {
+      "baseline": "2026-01-08",
+      "port-version": 0
     }
   }
 }

@@ -1,0 +1,4 @@
+ekizu provides CMake targets:
+
+    find_package(ekizu CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE ekizu::ekizu)
