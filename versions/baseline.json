@@ -15,6 +15,10 @@
     "mlspp": {
       "baseline": "2026-01-08",
       "port-version": 0
+    },
+    "ytdlpp": {
+      "baseline": "2026-01-08",
+      "port-version": 0
     }
   }
 }

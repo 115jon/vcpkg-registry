@@ -1,0 +1,4 @@
+ytdlpp provides CMake targets:
+
+    find_package(ytdlpp CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE ytdlpp::ytdlpp-lib)
