@@ -7,6 +7,14 @@
     "ekizu": {
       "baseline": "2026-01-08",
       "port-version": 0
+    },
+    "libdave": {
+      "baseline": "2026-01-08",
+      "port-version": 0
+    },
+    "mlspp": {
+      "baseline": "2026-01-08",
+      "port-version": 0
     }
   }
 }
