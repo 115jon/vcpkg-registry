@@ -1,0 +1,28 @@
+{
+  "name": "certify",
+  "version-date": "2026-01-07",
+  "description": "Boost.ASIO-based TLS certificate verification library",
+  "homepage": "https://github.com/115jon/certify",
+  "license": "BSL-1.0",
+  "dependencies": [
+    "vcpkg-cmake",
+    "vcpkg-cmake-config"
+  ],
+  "features": {
+    "boost": {
+      "description": "Build Boost from source (disable for system Boost)",
+      "dependencies": [
+        "boost-asio",
+        "boost-date-time",
+        "boost-filesystem",
+        "boost-system"
+      ]
+    },
+    "openssl": {
+      "description": "Build OpenSSL from source (disable for system OpenSSL)",
+      "dependencies": [
+        "openssl"
+      ]
+    }
+  }
+}
