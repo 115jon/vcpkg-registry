@@ -1,0 +1,4 @@
+The package v8 provides CMake targets:
+
+    find_package(v8 CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE v8::v8)
