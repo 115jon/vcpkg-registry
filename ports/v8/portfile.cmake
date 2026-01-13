@@ -4,6 +4,7 @@ vcpkg_from_github(
     REF 3c346df2815811c3470412ea0c490985fa768fd3
     SHA512 eef9b107d45dd978a54ff5ea8e54cc778fef55e9353b363f7a82373cb20a0e387007fd4849b3e51fdaac3d0e07bca72d787c50a3e754ba26648faa335edde9e4
     PATCHES v8-cmake-features.patch
+    HEAD_REF master
 )
 
 # =============================================================================
