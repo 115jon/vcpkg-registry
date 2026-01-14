@@ -22,7 +22,7 @@
     },
     "v8": {
       "baseline": "2026-01-13",
-      "port-version": 0
+      "port-version": 1
     },
     "ytdlpp": {
       "baseline": "2026-01-08",

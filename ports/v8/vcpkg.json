@@ -1,6 +1,7 @@
 {
   "name": "v8",
   "version-date": "2026-01-13",
+  "port-version": 1,
   "description": "V8 JavaScript Engine (CMake wrapper via v8-cmake)",
   "homepage": "https://v8.dev/",
   "license": "BSD-3-Clause",
