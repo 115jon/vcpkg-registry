@@ -1,7 +1,8 @@
 {
-  "name": "mlspp",
-  "version-date": "2026-01-08",
+  "builtin-baseline": "d5ec528843d29e3a52d745a64b469f810b2cedbf",
   "description": "Cisco MLS C++ library",
+  "name": "mlspp",
+  "version-string": "1cc50a124a3bc4e143a787ec934280dc70c1034d",
   "dependencies": [
     "catch2",
     "nlohmann-json",

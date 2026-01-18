@@ -4,29 +4,33 @@
       "baseline": "2026-01-07",
       "port-version": 0
     },
+    "efsw": {
+      "baseline": "1.4.1",
+      "port-version": 1
+    },
     "ekizu": {
-      "baseline": "2026-01-08",
-      "port-version": 0
+      "baseline": "0.1.0",
+      "port-version": 4
     },
     "libdave": {
       "baseline": "2026-01-08",
-      "port-version": 0
+      "port-version": 1
     },
     "mlspp": {
       "baseline": "2026-01-08",
-      "port-version": 0
+      "port-version": 1
     },
     "quickjs-ng": {
       "baseline": "0.11.0",
-      "port-version": 1
+      "port-version": 2
     },
     "v8": {
       "baseline": "2026-01-13",
       "port-version": 1
     },
     "ytdlpp": {
-      "baseline": "2026-01-08",
-      "port-version": 0
+      "baseline": "0.1.0",
+      "port-version": 1
     }
   }
 }

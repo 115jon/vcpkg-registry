@@ -3,11 +3,10 @@ vcpkg_from_github(
   SOURCE_PATH
   REPO
   115jon/ekizu
-  # REF
-  # e237425a0121f007662d2ea10dafc84f26716feb
-  # SHA512
-  # ecbfc277c74d8bc3737edd8ed078179da637d369e529b70015835092605e22c7e4ad4c0be05af73e9ba7a0686006e69c531763b52d84b4acc8bb395b58e4e454
-  # Force cache invalidation - 2026-01-13
+  REF
+  397779d9a8a7d5e92e061a790fb8cf0b2d1aa638
+  SHA512
+  d4756d8486459257dd4cbbfcd5ee59c8b5f88d6647709433bf57b42a0e6746600f6e3dd6014d31daca13abeb262bac6a7fd1762a9249964a2ef4f5c0a327348d
   HEAD_REF
   dev)
 
@@ -32,7 +31,4 @@ vcpkg_copy_pdbs()
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 
-# Install usage file and license
-file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/usage"
-     DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}")
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
