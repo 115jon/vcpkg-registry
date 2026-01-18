@@ -13,11 +13,11 @@
       "port-version": 4
     },
     "libdave": {
-      "baseline": "2026-01-08",
+      "baseline": "c0cf6449724082488aeb9d9c5398fe1c131abb04",
       "port-version": 1
     },
     "mlspp": {
-      "baseline": "2026-01-08",
+      "baseline": "1cc50a124a3bc4e143a787ec934280dc70c1034d",
       "port-version": 1
     },
     "quickjs-ng": {
