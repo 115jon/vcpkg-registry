@@ -1,0 +1,21 @@
+--- a/src/efsw/FileWatcherInotify.cpp
++++ b/src/efsw/FileWatcherInotify.cpp
+@@ -8,6 +8,9 @@
+ #include <string.h>
+ #include <sys/stat.h>
+ #include <unistd.h>
++#include <sys/select.h>
++#include <sys/time.h>
++#include <sys/types.h>
+
+ #ifdef EFSW_INOTIFY_NOSYS
+ #include <efsw/inotify-nosys.h>
+@@ -270,7 +273,7 @@
+ 		WatchMap::iterator wit;
+
+ 		WatcherInotify* currentMoveFrom = NULL;
+-		u_int32_t currentMoveCookie = -1;
++		uint32_t currentMoveCookie = (uint32_t)-1;
+ 		bool lastWasMovedFrom = false;
+ 		std::string prevOldFileName;
+

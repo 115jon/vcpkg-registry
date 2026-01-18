@@ -1,24 +1,25 @@
-vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS FEATURES
-                     disable-logging DISABLE_LOGGING)
+vcpkg_check_features(
+    OUT_FEATURE_OPTIONS FEATURE_OPTIONS FEATURES disable-logging
+    DISABLE_LOGGING
+)
 
-set(PATCHES "vcpkg-support.patch")
+set(PATCHES "vcpkg-support.patch" "fix-arm64-overflow.patch")
 if(DISABLE_LOGGING)
-  list(APPEND PATCHES "disable-logging.patch")
+    list(APPEND PATCHES "disable-logging.patch")
 endif()
 
 vcpkg_from_github(
-  OUT_SOURCE_PATH
-  SOURCE_PATH
-  REPO
-  discord/libdave
-  REF
-  c0cf6449724082488aeb9d9c5398fe1c131abb04
-  SHA512
-  6284ba5842519eb3be64bd2dd98dacdd75443738ca1b5b5a0642d2b21576cc57b28b0e0cf517654efd2b22af7160d818f951404132069f5907c5dc528f735165
-  HEAD_REF
-  main
-  PATCHES
-  ${PATCHES})
+    OUT_SOURCE_PATH
+    SOURCE_PATH
+    REPO
+    discord/libdave
+    REF
+    "${VERSION}"
+    SHA512
+    6284ba5842519eb3be64bd2dd98dacdd75443738ca1b5b5a0642d2b21576cc57b28b0e0cf517654efd2b22af7160d818f951404132069f5907c5dc528f735165
+    PATCHES
+    ${PATCHES}
+)
 
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}/cpp")
 
