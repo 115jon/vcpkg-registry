@@ -1,7 +1,7 @@
 {
   "name": "ekizu",
   "version": "0.1.0",
-  "port-version": 5,
+  "port-version": 6,
   "description": "A Discord library for C++",
   "homepage": "https://github.com/115jon/ekizu",
   "license": "MIT",
@@ -14,10 +14,7 @@
     "fmt",
     {
       "name": "libdave",
-      "default-features": false,
-      "features": [
-        "disable-logging"
-      ]
+      "default-features": false
     },
     "libsodium",
     "nlohmann-json",
@@ -54,6 +51,18 @@
         }
       ]
     },
+    "disable-dave-logging": {
+      "description": "Disable DAVE protocol logging (enabled by default)",
+      "dependencies": [
+        {
+          "name": "libdave",
+          "default-features": false,
+          "features": [
+            "disable-logging"
+          ]
+        }
+      ]
+    },
     "openssl": {
       "description": "Build OpenSSL from source (disable for system OpenSSL)",
       "dependencies": [
@@ -76,6 +85,7 @@
   },
   "default-features": [
     "boost",
+    "disable-dave-logging",
     "openssl"
   ]
 }

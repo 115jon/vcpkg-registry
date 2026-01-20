@@ -10,7 +10,7 @@
     },
     "ekizu": {
       "baseline": "0.1.0",
-      "port-version": 4
+      "port-version": 6
     },
     "libdave": {
       "baseline": "c0cf6449724082488aeb9d9c5398fe1c131abb04",
