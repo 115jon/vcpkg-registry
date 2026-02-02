@@ -1,7 +1,7 @@
 {
   "name": "ekizu",
   "version": "0.1.0",
-  "port-version": 7,
+  "port-version": 8,
   "description": "A Discord library for C++",
   "homepage": "https://github.com/115jon/ekizu",
   "license": "MIT",
